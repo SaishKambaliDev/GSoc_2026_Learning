@@ -14,6 +14,7 @@ Optimization and analysis of code
       |
       v
 Machine Code
+```
 
 ### `Need of IR`  
 1. C syntax is complicated
