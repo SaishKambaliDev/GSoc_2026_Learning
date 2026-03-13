@@ -69,7 +69,7 @@ For example, consider the following C statement:
 a = b + c;
 ```
 
-In GIMPLE this might look like:
+In GIMPLE SSA this might look like:
 
 ```
 _1 = b_1 + c_1
