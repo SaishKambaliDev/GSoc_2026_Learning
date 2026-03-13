@@ -1,17 +1,15 @@
-/* A simple state machine for detecting calls to exit().
-   This is a minimal GCC analyzer checker example.  */
+/* A simple state machine for detecting calls to exit(). */
 
 #include "analyzer/common.h"
-
 #include "diagnostics/event-id.h"
 #include "stringpool.h"
 #include "attribs.h"
 #include "xml-printer.h"
 #include "target.h"
-
 #include "analyzer/analyzer-logging.h"
 #include "analyzer/sm.h"
 #include "analyzer/pending-diagnostic.h"
+
 #if ENABLE_ANALYZER
 
 namespace ana {
@@ -75,8 +73,7 @@ public:
       if (tree fndecl = sm_ctxt.get_fndecl_for_call (*call))
         if (is_named_call_p (fndecl, "exit"))
           {
-            sm_ctxt.warn (NULL_TREE,
-                          std::make_unique<exit_diagnostic> ());
+            sm_ctxt.warn (NULL_TREE, std::make_unique<exit_diagnostic> ());
             return true;
           }
 
