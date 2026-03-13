@@ -564,19 +564,6 @@ This generates files showing **GIMPLE**, **SSA**, and other internal representat
 
 ---
 
-# Learning Goals
-
-While studying GCC internals, my goals are:
-
-* understand how GCC represents programs internally
-* explore **GIMPLE** and **SSA**
-* understand **CFG and program analysis**
-* study **GCC static analyzer architecture**
-* experiment with writing analyzer checks
-* eventually contribute to **GCC**
-
----
-
 # References
 
 **GCC Internals Documentation**
