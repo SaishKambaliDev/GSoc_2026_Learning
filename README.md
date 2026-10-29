@@ -73,6 +73,9 @@ gsoc-2026-learning/
 - [ ] Understanding upstream contribution workflows.
 - [ ] Studying project-specific contribution guidelines.
 
+## What I have contributed?
+I have contributed two versions of a strnlen() model in the static analyzer.
+
 ## 🌱 Contribution Experience
 
 I have explored GCC internals and worked on a GCC static analyzer patch related to `strnlen()`.
